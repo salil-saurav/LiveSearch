@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live</title>
+    <link rel="stylesheet" href="/Assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="banner-section">
+        <div class="container">
+            <div class="head-texts">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+                    error molestias pariatur perspiciatis obcaecati reiciendis modi,
+                    repellat nam repudiandae ea vero iste sapiente ullam tenetur facere
+                    aliquid iure facilis. Vitae.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    laudantium fugiat exercitationem non iste quae alias, doloribus
+                    libero maiores similique eius sit, et repellendus magnam molestias
+                    quaerat quam perspiciatis quas?
+                </p>
+            </div>
+            <div class="search-box-container">
+                <div class="search-box">
+                    <input class="form-control" id="categoryInput" type="select" placeholder="Type To Search" />
+
+                    <button class="btn search-button">
+
+                        <img src="./Assets/find.svg" alt="" srcset="">
+
+                    </button>
+                    <!-- <ul id="suggestions"></ul> -->
+                </div>
+                <div class="select-container d-none">
+                    <select class="form-select select-option" multiple id="categorySelect">
+                        <option value="" selected>-- Select A Category --</option>
+                    </select>
+                    <button class="btn btn-success search-button" style="opacity: 0">
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Result Section     -->
+
+    <section class="search-results">
+        <div class="container">
+            <div class="results-main-container">
+                <!--  category one   -->
+
+                <div class="category-container" data-category="category-one">
+                    <h1>Computer</h1>
+                    <div class="result-container">
+                        <div class="results">
+                            <h2>Result 1</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 2</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 3</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  category Two   -->
+
+                <div class="category-container" data-category="category-Two">
+                    <h1>Giraffe</h1>
+                    <div class="result-container">
+                        <div class="results">
+                            <h2>Result 4</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 5</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+
+                        <div class="results">
+                            <h2>Result 6</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--  category Three   -->
+
+                <div class="category-container" data-category="category-Three">
+                    <h1>Balloon</h1>
+                    <div class="result-container">
+                        <div class="results">
+                            <h2>Result 7</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 8</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 9</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category Four  -->
+
+                <div class="category-container" data-category="category-Four">
+                    <h1>Swing</h1>
+                    <div class="result-container">
+                        <div class="results">
+                            <h2>Result 7</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 8</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 9</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="category-container">
+                    <h1>Mouse</h1>
+                    <div class="result-container">
+                        <div class="results">
+                            <h2>Result 10</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 11</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 12</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--      -->
+
+
+                <div class="category-container" data-category="category-Four">
+                    <h1>Bus</h1>
+                    <div class="result-container">
+                        <div class="results">
+                            <h2>Result 13</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 14</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 15</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div class="category-container ">
+                    <h1>Fly</h1>
+                    <div class="result-container">
+                        <div class="results">
+                            <h2>Result 16</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 17</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 18</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div class="category-container">
+                    <h1>Comb</h1>
+                    <div class="result-container">
+                        <div class="results">
+                            <h2>Result 19</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 20</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                        <div class="results">
+                            <h2>Result 21</h2>
+                            <img src="./Assets/results-image.jpg" alt="Result Image" srcset="" />
+                            <span>Author: abc abc </span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia quae sit expedita illo quo aperiam natus assumenda
+                                reprehenderit magnam omnis delectus tempora optio beatae quos
+                                obcaecati unde, dolorum blanditiis nemo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <script src="/Assets/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
