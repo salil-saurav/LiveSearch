@@ -1,6 +1,6 @@
 # Live Search
 
-Live search which filters results using JS logic.
+Live search which filters result using JS logic.
 
 ## Technologies Used
 
