@@ -5,10 +5,6 @@ const selectContainer = document.querySelector(".select-container");
 const body = document.body;
 // const loadMoreButton = document.querySelectorAll(".load-more");
 
-// loadMoreButton.forEach((btn) => {
-//   btn.addEventListener("click", () => {});
-// });
-
 body.addEventListener("click", () => {
   selectContainer.classList.add("d-none");
   selectContainer.classList.remove("d-flex");
@@ -33,13 +29,23 @@ function populateSelectOptions() {
 
     option.addEventListener("click", (evt) => {
       let newValue = evt.target.value;
-      console.log(newValue);
       categoryInput.value = newValue;
     });
   });
 }
 
 populateSelectOptions(); // options Added
+
+const selectedOptions = Array.from(categorySelect.options).map(
+  (option) => option.value
+);
+
+const loweredSelectedOptions = [
+  ...selectedOptions.map((option) => option.toLowerCase()),
+];
+
+const filtered = loweredSelectedOptions.includes(categoryInput.value);
+console.log(filtered);
 
 // showing the select container when categoryInput value changes
 
@@ -50,12 +56,10 @@ categoryInput.addEventListener("input", () => {
   selectContainer.classList.add("d-flex");
 
   //  displaying all div when input value is falsy
-
   if (!categoryInput.value) {
     categoryDivs.forEach((div) => div.classList.remove("d-none"));
   }
 
-  // console.log(categorySelect.options.innerHTML);
   const searchText = categoryInput.value.trim().toLowerCase();
 
   categorySelect.innerHTML = "";
@@ -72,17 +76,6 @@ categoryInput.addEventListener("input", () => {
 });
 
 //
-
-const avaialableOptions = async () => {
-  const avaialableOptionsArray = Array.from(categorySelect.options);
-
-  const inputValue = categoryInput.value.trim().toLowerCase();
-
-  if (inputValue === avaialableOptionsArray)
-    avaialableOptionsArray.forEach((option) => console.log(option));
-};
-
-avaialableOptions();
 
 // Event listener for select change
 categorySelect.addEventListener("change", function () {
@@ -111,5 +104,3 @@ categoryDivs.forEach((div, index) => {
     div.classList.add("d-none");
   }
 });
-
-//
