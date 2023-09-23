@@ -73,7 +73,7 @@ input[type="text"] {
 /*     Results      */
 
 .results img {
-  width: 300px;
+  width: 257px;
   border-radius: 20px;
 }
 .results-main-container {
@@ -86,9 +86,9 @@ input[type="text"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 22rem;
+  width: 20rem;
   border: 2px solid rgba(0, 0, 0, 0.3);
-  margin: 2rem;
+  margin: 1rem;
 
   border-radius: 22px;
   padding: 1rem;
