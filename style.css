@@ -11,6 +11,7 @@
   background-repeat: no-repeat;
   background-position: center;
   height: fit-content;
+  position: relative;
 
   padding: 11rem;
 }
@@ -22,6 +23,24 @@
 p {
   text-align: center;
   color: #fff;
+}
+.para {
+  padding: 0 8rem;
+}
+
+.not-found {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  opacity: 0;
+  transform: translateY(-3rem);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  border-radius: 25px;
+}
+
+.slide-in {
+  transform: translateY(2rem);
+  opacity: 1;
 }
 
 .search-bar {
@@ -108,14 +127,45 @@ input[type="text"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .result-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  min-width: 1080px;
 }
 
 .load-more {
   margin: 2rem;
+}
+
+.loading-container {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transition: opacity 0.5s ease-in-out;
+}
+.show_loading {
+  opacity: 1;
+}
+.loading {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 7px solid #f3f3f3;
+  border-top: 7px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

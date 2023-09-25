@@ -11,21 +11,29 @@
 
 <body>
     <section class="banner-section">
+        <div class="alert alert-danger not-found" role="alert">
+            Category Not found!
+        </div>
+
+
         <div class="container">
             <div class="head-texts">
                 <h1>Lorem ipsum dolor sit amet</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
-                    error molestias pariatur perspiciatis obcaecati reiciendis modi,
-                    repellat nam repudiandae ea vero iste sapiente ullam tenetur facere
-                    aliquid iure facilis. Vitae.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                    laudantium fugiat exercitationem non iste quae alias, doloribus
-                    libero maiores similique eius sit, et repellendus magnam molestias
-                    quaerat quam perspiciatis quas?
-                </p>
+                <div class="para">
+
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+                        error molestias pariatur perspiciatis obcaecati reiciendis modi,
+                        repellat nam repudiandae ea vero iste sapiente ullam tenetur facere
+                        aliquid iure facilis. Vitae.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                        laudantium fugiat exercitationem non iste quae alias, doloribus
+                        libero maiores similique eius sit, et repellendus magnam molestias
+                        quaerat quam perspiciatis quas?
+                    </p>
+                </div>
             </div>
             <div class="search-box-container">
 
@@ -56,8 +64,14 @@
             <div class="results-main-container">
                 <!--  category one   -->
 
-                <div class="category-container" data-category="category-one">
+                <div class="category-container">
                     <h1>Computer</h1>
+                    <span class="loading-container">
+                        <span class="loading">
+
+                        </span>
+                    </span>
+
                     <div class="result-container">
                         <div class="results">
                             <h2>Result 1</h2>
@@ -92,6 +106,7 @@
                                 obcaecati unde, dolorum blanditiis nemo.
                             </p>
                         </div>
+
                     </div>
                 </div>
 

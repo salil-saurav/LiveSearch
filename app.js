@@ -3,6 +3,8 @@ const categoryDivs = document.querySelectorAll(".category-container");
 const categoryInput = document.getElementById("categoryInput");
 const selectContainer = document.querySelector(".select-container");
 const body = document.body;
+const notFound = document.querySelector(".not-found");
+
 // const loadMoreButton = document.querySelectorAll(".load-more");
 
 body.addEventListener("click", () => {
@@ -42,16 +44,19 @@ const selectedOptions = Array.from(categorySelect.options).map(
 
 const loweredSelectedOptions = [
     ...selectedOptions.map((option) => option.toLowerCase()),
-
 ];
 
 const filtered = loweredSelectedOptions.includes(categoryInput.value);
 
+// Adding Error message when no category is found
+
 categoryInput.addEventListener("keyup", (evt) => {
     if (!filtered && evt.key === "Enter") {
-        console.log("not found");
-    } else {
-        console.log(filtered);
+        notFound.classList.add("slide-in");
+
+        setTimeout(() => {
+            notFound.classList.remove("slide-in");
+        }, 4000);
     }
 });
 // showing the select container when categoryInput value changes
@@ -84,6 +89,9 @@ categoryInput.addEventListener("input", () => {
 
 //
 
+const loadingContainer = document.querySelector(".loading-container");
+
+
 // Event listener for select change
 categorySelect.addEventListener("change", function () {
     const selectedCategory = this.value;
@@ -99,15 +107,25 @@ categorySelect.addEventListener("change", function () {
             const category = div.querySelector("h1").innerText;
 
             if (selectedCategory === category) {
-                div.classList.remove("d-none");
                 categoryInput.value = selectedCategory;
+
+
+                loadingContainer.classList.add("show_loading")
+                setTimeout(() => {
+
+                    loadingContainer.classList.remove("show_loading")
+                }, 2000)
+                div.classList.remove("d-none");
             }
         });
     }
 });
+
+
 
 categoryDivs.forEach((div, index) => {
     if (index >= 3) {
         div.classList.add("d-none");
     }
 });
+
