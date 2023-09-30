@@ -5,7 +5,6 @@ const selectContainer = document.querySelector(".select-container");
 const body = document.body;
 const notFound = document.querySelector(".not-found");
 
-// const loadMoreButton = document.querySelectorAll(".load-more");
 
 body.addEventListener("click", () => {
     selectContainer.classList.add("d-none");
@@ -108,14 +107,8 @@ categorySelect.addEventListener("change", function () {
 
             if (selectedCategory === category) {
                 categoryInput.value = selectedCategory;
-
-
-                loadingContainer.classList.add("show_loading")
-                setTimeout(() => {
-
-                    loadingContainer.classList.remove("show_loading")
-                }, 2000)
                 div.classList.remove("d-none");
+                div.classList.add("d-flex")
             }
         });
     }
@@ -123,9 +116,11 @@ categorySelect.addEventListener("change", function () {
 
 
 
-categoryDivs.forEach((div, index) => {
-    if (index >= 3) {
-        div.classList.add("d-none");
+
+categoryInput.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const selectOPtion = document.querySelector(".select-option")
+        selectOPtion.focus();
     }
 });
-
